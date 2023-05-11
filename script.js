@@ -5,9 +5,7 @@ const possibleChoices = document.querySelectorAll('button');
 
 let userChoice;
 let computerChoice;
-let lives = 3;
-let userScore = 0;
-let computerScore = 0;
+let result;
 
 //Event listener response when button is clicked for User choice
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
@@ -33,28 +31,30 @@ function generateComputerChoice() {
     computerChoiceDisplay.innerHTML = computerChoice;
 };
 
-// function to update the lives display
-function updateLives() {
-    let livesDisplay = '';
-    for (let i = 0; i < lives; i++) {
-    livesDisplay += '<span class="heart">♥</span>';
-    }
-    document.querySelector('#lives').innerHTML = livesDisplay;
-    }
 
-
-function getResult(userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
-    return "It's a tie!";
-    } else if (
-        (userChoice === 'rock' && computerChoice === 'scissors') ||
-        (userChoice === 'paper' && computerChoice === 'rock') ||
-        (userChoice === 'scissors' && computerChoice === 'paper')
-    ) {
-    return "You win!";
-    } else {
-    return "You lose!";
+function getResult() {
+    if (computerChoice === userChoice) {
+        result = 'Its a draw!';
     }
+    if (computerChoice === 'rock' && userChoice === 'paper') {
+        result = 'You win!';
+    }
+    if (computerChoice === 'rock' && userChoice === 'scissors') {
+        result = 'You lose!';
+    }
+    if (computerChoice === 'paper' && userChoice === 'scissors') {
+        result = 'You win!';
+    }
+    if (computerChoice === 'paper' && userChoice === 'rock') {
+        result = 'You lose!';
+    }
+    if (computerChoice === 'scissors' && userChoice === 'rock') {
+        result = 'You win!';
+    }
+    if (computerChoice === 'scissors' && userChoice === 'paper') {
+        result = 'You lose!';
     }
     resultDisplay.innerHTML = result;
+};
+   
     
