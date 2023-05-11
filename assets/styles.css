@@ -68,11 +68,15 @@ body {
     align-items: center;
 }
 
-#options {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+#user-score {
+    border-radius: 20px;
 }
+
+#computer-score {
+    border-radius: 60px 20px;
+}
+
+/* Rock, Paper, Scissors styling */
 
 button {
     background-color: black;
@@ -83,32 +87,6 @@ button {
     border-radius: 30%;
     cursor: pointer;
     text-decoration: none;
-}
-
-#scoreboard {
-    display: flex;
-    border: 1px solid #000;
-    align-items: center;
-    line-height: 4;
-    margin-top: 5px;
-}
-
-.score {
-    margin: 0 auto;
-    font-size: 22px;
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid;
-    margin: 5px auto;
-    height: 90px;
-    padding: 0 23px;
-}
-
-#user-score {
-    border-radius: 20px;
-}
-
-#computer-score {
-    border-radius: 60px 20px;
 }
 
 #rock {
@@ -146,13 +124,6 @@ button {
 
 #scissors:hover {
     background-size: 60px 60px;
-}
-
-#reset {
-    border-radius: 61%;
-    width: 133px;
-    height: 121px;
-    margin: 50px;
 }
 
 /* --------- Media queries */
