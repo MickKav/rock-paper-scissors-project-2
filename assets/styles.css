@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+body {
+    background-image: url("/assets/images/skyRPS.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    font-weight: bold;
+    font-size: larger;
+    height: 100vh;
+}
+
+/* Main game area */
+#game-head {
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    border-radius: 60px 20px;
+    width: 60%;
+    text-shadow: 1px 0.5px 2px white;
+}
+
+#user-choice {
+    display: none;
+}
+
+#result-notice-text {
+    margin: 1px auto;
+    text-shadow: 1px 0.5px 3px white;
+    line-height: 79px;
+    font-size: 32px;
+}
+
+#game {
+    background: rgba(0, 0, 0, 0.3);
+    margin: 40px auto 0;
+    height: 59%;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#game-box1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+#game-box2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button {
+    background-color: black;
+    margin: 10px;
+    border: 1px solid white;
+    width: 160px;
+    height: 103px;
+    border-radius: 30%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#scoreboard {
+    display: flex;
+    border: 1px solid #000;
+    align-items: center;
+    line-height: 4;
+    margin-top: 5px;
+}
+
+.score {
+    margin: 0 auto;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid;
+    margin: 5px auto;
+    height: 90px;
+    padding: 0 23px;
+}
+
+#user-score {
+    border-radius: 20px;
+}
+
+#computer-score {
+    border-radius: 60px 20px;
+}
+
+#rock {
+    background-image: url(/assets/images/pngwing.com\ \(1\).png);
+    background-size: 103px 66px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+    
+}
+
+#rock:hover {
+    background-size: 120px 90px;
+}
+
+#paper {
+    background-image: url(/assets/images/pngwing.com.png);
+    background-size: 67px 61px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+
+#paper:hover {
+    background-size: 90px 90px;
+}
+
+#scissors {
+    background-image: url(/assets/images/pngwing.com\ \(2\).png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+
+#scissors:hover {
+    background-size: 60px 60px;
+}
+
+#reset {
+    border-radius: 61%;
+    width: 133px;
+    height: 121px;
+    margin: 50px;
+}
+
+/* --------- Media queries */
+
+@media (max-width: 414px) {
+    body {
+        height: 140vh;
+    }
+
+    #game {
+        margin: 100px auto 0 15px;
+        height: 59%;
+        width: 120%;
+    }
+
+    #game-box1 {
+        width: 90%;
+    }
+}
