@@ -157,6 +157,14 @@ button {
 
 /* --------- Media queries */
 
+@media (max-width: 768px) {
+    #game {
+        width: 99%;
+        margin: 50px 2px 0 2px;
+    }
+}
+
+
 @media (max-width: 414px) {
     body {
         height: 140vh;
@@ -165,10 +173,28 @@ button {
     #game {
         margin: 100px auto 0 15px;
         height: 59%;
-        width: 120%;
+        width: 104%;
     }
 
     #game-box1 {
         width: 90%;
     }
+
+    button {
+        width: 129px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #game {
+        height: 64%;
+        width: 129%;
+        margin: 100px 2px 0 2px;
+    }
+
+    button {
+        width: 115px;
+    }
+
 }
