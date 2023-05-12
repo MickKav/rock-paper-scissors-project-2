@@ -27,24 +27,35 @@ function generateComputerChoice() {
     };
     if (randomNumber === 3) {
         computerChoice = 'paper';
-    };
-    if (randomNumber === 4) {
-        computerChoice = 'lizard';
-    };
-    if (randomNumber === 5) {
-        computerChoice = 'spock';
-    };
+    }
+
     computerChoiceDisplay.innerHTML = computerChoice;
 };
 
 //Function with all the possible outcomes
 function getResult() {
-    if (computerChoice === userChoice) return "It's a draw!";
-
-    if (resultsMatrix[userChoice].includes(computerChoice)) return "You win!";
-
-    return "You lose!";
-
+    if (computerChoice === userChoice) {
+        result = "It's a draw!";
+    }
+    if (computerChoice === "rock" && userChoice === "paper") {
+        result = "You Win!";
+    }
+    if (computerChoice === "rock" && userChoice === "scissors") {
+        result = "You Lose!";
+    }
+    if (computerChoice === "paper" && userChoice === "scissors") {
+        result = "You Win!";
+    }
+    if (computerChoice === "paper" && userChoice === "rock") {
+        result = "You Lose!";
+    }
+    if (computerChoice === "scissors" && userChoice === "rock") {
+        result = "You Win!";
+    }
+    if (computerChoice === "scissors" && userChoice === "paper") {
+        result = "You Lose!";
+    }
+    resultDisplay.innerHTML = result;
 };
    
     
