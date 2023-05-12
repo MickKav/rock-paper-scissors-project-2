@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/assets/images/skyRPS.jpg");
+    background-image: url("assets/images/skyRPS.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -90,7 +90,7 @@ button {
 }
 
 #rock {
-    background-image: url(/assets/images/pngwing.com\ \(1\).png);
+    background-image: url(assets/images/pngwing.com\ \(1\).png);
     background-size: 103px 66px;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,7 +103,7 @@ button {
 }
 
 #paper {
-    background-image: url(/assets/images/pngwing.com.png);
+    background-image: url(assets/images/pngwing.com.png);
     background-size: 67px 61px;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,7 +115,7 @@ button {
 }
 
 #scissors {
-    background-image: url(/assets/images/pngwing.com\ \(2\).png);
+    background-image: url(assets/images/pngwing.com\ \(2\).png);
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position: center;

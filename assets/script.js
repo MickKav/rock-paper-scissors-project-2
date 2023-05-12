@@ -3,14 +3,6 @@ const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 
-const resultsMatrix = {
-    "rock": ["lizard", "scissors"]
-    "paper": ["rock", "spock"]
-    "scissors": ["paper", "lizard"]
-    'lizard': ["spock", "paper"]
-    'spock': ["scissors", "rock"]
-};
-
 let userChoice;
 let computerChoice;
 let result;
