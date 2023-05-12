@@ -1,6 +1,9 @@
 # Rock, paper & scissors: Project 2
 
 A very basic rock paper scissors game that is interactive 
+Visit [live website here](https://mickkav.github.io/rock-paper-scissors-project-2/)
+
+<img src="amiresponsivo.png" width = "500">
 
 
 ## About This Project
@@ -16,6 +19,8 @@ This project was structured and styled with HTML5 & CSS3 & JavaScript.
 
 - Game Area
     - Where the computer score and the result of your choice is stored.
+
+    <img src="RPS_screenshot.png" alt="screenshot of the game page" width = "500">
 
 - The Button Area
     - Where the three choices, rock, paper and scissors reside. 
@@ -59,3 +64,8 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
     - In GitHub repository go to settings
     - From the source section drop-down menu select Main branch
     - Once Main Branch is selected, the page provided the link to the completed website.
+
+## Sketch up
+- Figma was used to do a mock-up of lay out of site.
+
+<img src="Figma_sketch_up.png" alt="sketch up of the site in its early days" width = "500">
