@@ -3,6 +3,14 @@ const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 
+const resultsMatrix = {
+    "rock": ["lizard", "scissors"]
+    "paper": ["rock", "spock"]
+    "scissors": ["paper", "lizard"]
+    'lizard': ["spock", "paper"]
+    'spock': ["scissors", "rock"]
+};
+
 let userChoice;
 let computerChoice;
 let result;
@@ -28,33 +36,23 @@ function generateComputerChoice() {
     if (randomNumber === 3) {
         computerChoice = 'paper';
     };
+    if (randomNumber === 4) {
+        computerChoice = 'lizard';
+    };
+    if (randomNumber === 5) {
+        computerChoice = 'spock';
+    };
     computerChoiceDisplay.innerHTML = computerChoice;
 };
 
 //Function with all the possible outcomes
 function getResult() {
-    if (computerChoice === userChoice) {
-        result = 'Its a draw!';
-    }
-    if (computerChoice === 'rock' && userChoice === 'paper') {
-        result = 'You win!';
-    }
-    if (computerChoice === 'rock' && userChoice === 'scissors') {
-        result = 'You lose!';
-    }
-    if (computerChoice === 'paper' && userChoice === 'scissors') {
-        result = 'You win!';
-    }
-    if (computerChoice === 'paper' && userChoice === 'rock') {
-        result = 'You lose!';
-    }
-    if (computerChoice === 'scissors' && userChoice === 'rock') {
-        result = 'You win!';
-    }
-    if (computerChoice === 'scissors' && userChoice === 'paper') {
-        result = 'You lose!';
-    }
-    resultDisplay.innerHTML = result;
+    if (computerChoice === userChoice) return "It's a draw!";
+
+    if (resultsMatrix[userChoice].includes(computerChoice)) return "You win!";
+
+    return "You lose!";
+
 };
    
     
